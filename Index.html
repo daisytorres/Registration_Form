@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    First Name: * <input type="text" name="first_name"> <br><br>
+    Last Name: * <input type="text" name="last_name"><br><br>
+    Email Address: * <input type="text" name="email_address"><br><br>
+    Password: * <input type="password" name="password"><br><br>
+    Confirm Password: * <input type="password" name="password"><br><br>
+    Birthday: <input type="date" name="dob"><br><br>
+    Gender Identity:<br>
+    <input type="radio" name="gender_identity" value="Male" id="Male">
+    <label for="Male"><strong>Male</strong></label>
+    <input type="radio" name="gender_identity" value="Female" id="Female">
+    <label for="Female">Female</label>
+    <input type="radio" name="gender_identity" value="Non-binary" id="Non-binary">
+    <label for="Non-binary">Non-binary</label>
+    <input type="radio" name="gender_identity" value="I prefer not to answer" id="I prefer not to answer">
+    <label for="I prefer not to answer">I prefer not to answer</label><br><br>
+    A short description about myself:<br><br>
+    <textarea name="comment" cols="20" rows="3"></textarea><br><br>
+    Favorite Language: <select name="favorite_language">
+        <option value="Javascript">Javascript</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+    </select><br><br>
+    <form action="/process" method="post">
+        <div>
+            <input type="checkbox" name="offers" 
+            id="offers" checked >
+            <label for="offers">I would like 
+            to receive periodic email updates!</label>
+        </div><br>
+        <input type="submit" value="Create Account!">
+    </form><br>
+    * Indicates a required field 
+
+</body>
+</html>
